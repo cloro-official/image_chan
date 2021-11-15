@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">image_chan</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="search_title">Search</string>
+    <string name="search_hint">Search...</string>
+    <string name="splash_text">image_chan</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Settings</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="search_label">Search...</string>
+    <string name="settings_description">Search for an image...</string>
+
+    <string name="query">Searching...</string>
+    <string name="none">No results found!</string>
+
+    <string name="top">SORT HIGH SCORE</string>
+    <string name="bottom">SORT LOW SCORE</string>
+    <string name="clear">HOME</string>
+    <string name="favorites">FAVORITES</string>
+    <string name="error">An error occurred.</string>
+    <string name="tag_placeholder">No tags provided.</string>
+    <string name="loading">LOADING...</string>
+
+    <string name="add">ADD TO FAVORITES</string>
+    <string name="remove">REMOVE FROM FAVORITES</string>
+    <string name="save">DOWNLOAD</string>
+    <string name="viewfav">VIEWING YOUR FAVORITES</string>
+    <string name="viewhome">HOME</string>
+    <string name="view">VIEW ON BROWSER</string>
+    <string name="viewsmall">VIEW</string>
+    <string name="nofav">Woah, so empty!</string>
+    <string name="description">
+        <b>Welcome to image-chan!</b>\n\n
+         <b>image-chan</b> is an <b>Imageboard searcher</b> that searches images through the use of tags.
+            It searches images from the <a href="https://safebooru.org/">Safebooru.org</a> website, which is an Imageboard site with only safe content.\n\n
+            <b>How to search?</b>\n\n
+            You can search by using <b>booru tags</b>, and if you want to <b>search more than one tag</b>, separate it with a <b>\", \"</b>.\n\n
+            For example, if you want to search an artwork with one girl with food, do <b>\"1girl, food\"</b>\n\n
+            You can click on an image and see its description where it contains its tags, which can be used as a guide for you to search for things.
+        \n\n
+        <b>Credits</b>\n<b>XI - Python</b>\n\n
+            <b>Abanilla, Manuel Angelo R.</b>\n
+            <b>Alupit, Ken Adrian</b>\n
+            <b>Eiryk, Sardalla</b>\n\n
+            <b>Kodehawa</b> - <a href="https://github.com/Kodehawa/imageboard-api">imageboard-api</a>\n
+    </string>
+    <string name="about">about</string>
+</resources>

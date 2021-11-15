@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start"
+    android:background="@color/charcoal"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:id="@+id/toolbarlayout"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.Image_chan.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/raisin_black"
+            app:popupTheme="@style/Theme.Image_chan.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/searched"
+        android:layout_below="@+id/options"
+        android:paddingVertical="5dp"
+        android:gravity="center_horizontal"
+        android:visibility="gone"
+        android:textColor="@color/white"
+        android:paddingHorizontal="8dp"
+        android:background="#B9323333" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/home_text"
+        android:layout_below="@+id/searched"
+        android:paddingVertical="5dp"
+        android:textAllCaps="true"
+        android:text="@string/viewhome"
+        android:gravity="center_horizontal"
+        android:visibility="gone"
+        android:textColor="@color/white"
+        android:paddingHorizontal="8dp"
+        android:background="#B9323333" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/abt_text"
+        android:layout_below="@+id/home_text"
+        android:paddingVertical="5dp"
+        android:text="@string/about"
+        android:textAllCaps="true"
+        android:gravity="center_horizontal"
+        android:visibility="gone"
+        android:textColor="@color/white"
+        android:paddingHorizontal="8dp"
+        android:background="#B9323333" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fav_text"
+        android:textAllCaps="true"
+        android:layout_below="@+id/abt_text"
+        android:paddingVertical="5dp"
+        android:text="@string/favorites"
+        android:gravity="center_horizontal"
+        android:visibility="gone"
+        android:textColor="@color/white"
+        android:paddingHorizontal="8dp"
+        android:background="#B9323333" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/loader"
+        android:layout_below="@+id/home_text"
+        android:paddingVertical="5dp"
+        android:text="@string/loading"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:visibility="gone"
+        android:textColor="@color/white"
+        android:paddingHorizontal="8dp"
+        android:background="#B9323333" />
+
+    <RelativeLayout
+        android:id="@+id/options"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/rich_black"
+        android:layout_below="@+id/toolbarlayout"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingHorizontal="3dp">
+
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="@string/clear" />
+
+        <Button
+            android:id="@+id/favorites"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@id/clear"
+            android:text="@string/favorites" />
+
+        <Button
+            android:id="@+id/about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@id/favorites"
+            android:text="@string/about" />
+    </RelativeLayout>
+
+    <include
+        android:layout_below="@+id/fav_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/inclusion"
+        layout="@layout/content_main"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/fav_text"
+        android:id="@+id/about_page"
+        android:paddingVertical="10dp"
+        android:gravity="center_horizontal"
+        android:visibility="gone"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/image_chan_logo" />
+
+        <TextView
+            android:layout_marginVertical="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="image_chan"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:layout_marginVertical="5dp"
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="45dp"
+            android:autoLink="all"
+            android:singleLine="false"
+            android:layout_height="wrap_content"
+            android:text="@string/description"
+            android:textAlignment="center"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+</RelativeLayout>
